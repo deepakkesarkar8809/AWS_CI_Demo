@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfect Website</title>
+    <title>Deepak's AWS-DevOps Journey</title>
     <style>
-        /* Base Styles */
+        /* General Styles */
         * {
             margin: 0;
             padding: 0;
@@ -13,96 +13,84 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        /* Light Theme */
-        body.light {
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f4f6;
             color: #333;
+            line-height: 1.6;
         }
 
-        /* Dark Theme */
-        body.dark {
-            background-color: #333;
-            color: #f4f4f4;
-        }
-
-        /* Header */
         header {
-            background-color: #007BFF;
+            background-color: #0073e6;
             color: white;
-            padding: 20px;
             text-align: center;
+            padding: 20px;
         }
 
         header h1 {
-            margin: 0;
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
 
-        nav ul {
-            list-style: none;
-            padding: 10px 0;
-            text-align: center;
+        header p {
+            font-size: 1.2rem;
         }
 
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-
-        nav ul li a {
+        nav {
+            background-color: #005bb5;
             color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
         }
 
-        nav ul li a:hover {
+        nav a:hover {
             text-decoration: underline;
         }
 
-        /* Sections */
         section {
             padding: 20px;
             margin: 20px auto;
             max-width: 800px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             background-color: white;
-            transition: background-color 0.3s ease;
-        }
-
-        body.dark section {
-            background-color: #444;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
 
         section h2 {
             margin-bottom: 10px;
-            font-size: 1.5rem;
+            color: #0073e6;
         }
 
         section p {
             margin-bottom: 15px;
         }
 
-        /* Footer */
         footer {
             text-align: center;
-            background-color: #007BFF;
+            background-color: #0073e6;
             color: white;
             padding: 10px 0;
             margin-top: 20px;
         }
 
-        /* Theme Toggle Button */
+        .quote {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #555;
+            text-align: center;
+            margin-top: 20px;
+        }
+
         .theme-toggle {
             position: fixed;
             top: 10px;
             right: 10px;
-            background-color: #007BFF;
+            background-color: #0073e6;
             color: white;
             border: none;
             border-radius: 5px;
@@ -113,43 +101,65 @@
         }
 
         .theme-toggle:hover {
-            background-color: #0056b3;
+            background-color: #005bb5;
+        }
+
+        /* Dark Mode */
+        body.dark {
+            background-color: #1a1a1a;
+            color: #ddd;
+        }
+
+        body.dark section {
+            background-color: #333;
+        }
+
+        body.dark header, body.dark nav, body.dark footer {
+            background-color: #222;
         }
     </style>
 </head>
 <body class="light">
     <header>
-        <h1>Perfect Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to Deepak's AWS-DevOps Journey</h1>
+        <p>Sharing my experiences and lessons in the world of AWS and DevOps.</p>
     </header>
 
-    <section id="home">
-        <h2>Home</h2>
-        <p>Welcome to the perfect website. Here, we demonstrate a basic yet functional design with HTML, CSS, and JavaScript.</p>
-    </section>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#learning">What I’m Learning</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
     <section id="about">
-        <h2>About</h2>
-        <p>This website showcases how you can combine front-end technologies to build an interactive and responsive site. It includes a theme toggle feature.</p>
+        <h2>About Me</h2>
+        <p>Hello! I’m Deepak Kesarkar, a passionate learner and practitioner in AWS and DevOps. I love to explore cloud technologies and help others on their journey.</p>
+    </section>
+
+    <section id="learning">
+        <h2>What I’m Learning</h2>
+        <p>
+            My current focus is on mastering:
+            <ul>
+                <li>AWS CodePipeline, CodeBuild, and CodeDeploy.</li>
+                <li>Docker and Kubernetes for containerization and orchestration.</li>
+                <li>Terraform for Infrastructure as Code (IaC).</li>
+                <li>Jenkins and GitHub Actions for CI/CD pipelines.</li>
+            </ul>
+        </p>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-        <p>Phone: +123-456-7890</p>
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:deepak@example.com">deeps9427@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/deepak" target="_blank">Deepak's LinkedIn</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Deepak. All rights reserved.</p>
     </footer>
 
-    <button class="theme-toggle" id="theme-toggle">Toggle Theme</button>
+    <button class="theme-toggle" id="theme-toggle">Dark Mode</button>
 
     <script>
         // Theme Toggle Logic
@@ -161,11 +171,7 @@
             body.classList.toggle('light');
 
             // Update button text
-            if (body.classList.contains('dark')) {
-                themeToggle.textContent = 'Light Mode';
-            } else {
-                themeToggle.textContent = 'Dark Mode';
-            }
+            themeToggle.textContent = body.classList.contains('dark') ? 'Light Mode' : 'Dark Mode';
         });
     </script>
 </body>
